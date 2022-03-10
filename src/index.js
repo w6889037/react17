@@ -157,7 +157,7 @@ class Counter extends React.Component {
       count: this.state.count + 1
     })
   }
-
+ 
   //防止组件重新渲染
   shouldComponentUpdate() {
     return false
