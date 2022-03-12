@@ -8,6 +8,7 @@ import PropTypes from 'prop-types'
 import LifeCycle from './LiftCycle'
 import Mouse from './Mouse'
 import img from './img/cat1.jpg'
+import TestRouter from './Router'
 
 // ReactDOM.render(
 //   <React.StrictMode>
@@ -213,8 +214,7 @@ const loadData = () => {
 const span = <span>我是一个span</span>
 const sayHi = () => "say hi"
 const name = "hahaha"
-const title =
-  <div className='div'>
+const title = <div className='div'>
     <p className='name'>{name}</p>
     <p>{1 + 7}</p>
     <p>{3 > 5 ? '大于' : '小于'}</p>
@@ -236,7 +236,9 @@ const title =
     <Mouse renderMouse={mouseMove}></Mouse>
     {/* <Mouse renderMouse={imageMouse}></Mouse> */}
     <HighExt age='11'></HighExt>
+    <TestRouter></TestRouter>
   </div>
+  
 
 ReactDOM.render(
   title,
